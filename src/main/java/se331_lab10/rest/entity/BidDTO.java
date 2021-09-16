@@ -13,5 +13,4 @@ public class BidDTO {
     Long id;
     String amount;
     String detetime;
-    AuctionItem item;
 }
