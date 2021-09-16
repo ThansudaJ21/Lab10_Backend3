@@ -24,8 +24,13 @@ public class AuctionItemServiceImpl implements AuctionItemService{
         return auctionItemDao.getAuctionItem(id);
     }
 
+    //@Override
+    //public Page<AuctionItem> getAuctionItems(String title, Pageable pageable) {
+    //    return auctionItemDao.getAuctionItem(title,pageable);
+    //}
+
     @Override
-    public Page<AuctionItem> getAuctionItems(String title, Pageable pageable) {
-        return auctionItemDao.getAuctionItem(title,pageable);
+    public Page<AuctionItem> getAuctionItems(Integer amount, Pageable pageable) {
+        return auctionItemDao.getAuctionItem(amount,pageable);
     }
 }

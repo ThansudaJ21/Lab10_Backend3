@@ -8,5 +8,6 @@ public interface AuctionItemDao {
     Integer getAuctionItemSize();
     AuctionItem getAuctionItem(Long id);
     Page<AuctionItem> getAuctionItems(Integer pageSize, Integer page);
-    Page<AuctionItem> getAuctionItem(String name, Pageable page);
+    //Page<AuctionItem> getAuctionItem(String name, Pageable page);
+    Page<AuctionItem> getAuctionItem(Integer amount, Pageable page);
 }
